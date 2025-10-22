@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización TEST-001 - Manny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .content {
+            padding: 30px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .info-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e91e63;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ Cotización de Prueba</h1>
+            <p><strong>Sistema GitHub Pages Funcionando ✅</strong></p>
+        </div>
+        
+        <div class="content">
+            <h2>Información del Cliente</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>👤 Cliente</h4>
+                    <p>Prueba Sistema</p>
+                </div>
+                <div class="info-card">
+                    <h4>📄 Cotización</h4>
+                    <p>TEST-001</p>
+                </div>
+                <div class="info-card">
+                    <h4>📅 Fecha</h4>
+                    <p id="fecha"></p>
+                </div>
+                <div class="info-card">
+                    <h4>💰 Total</h4>
+                    <p>$1,234.56</p>
+                </div>
+            </div>
+            
+            <h2>Estado del Sistema</h2>
+            <div class="success">✅ GitHub Pages: Activo</div>
+            <div class="success">✅ Hosting: Funcionando</div>
+            <div class="success">✅ SSL: Habilitado</div>
+            <div class="success">✅ Listo para n8n</div>
+            
+            <div style="background: #e8f5e8; padding: 20px; border-radius: 10px; text-align: center; margin-top: 30px;">
+                <h3>🎉 ¡Configuración Exitosa!</h3>
+                <p>El sistema está listo para generar cotizaciones automáticamente desde n8n.</p>
+                <p><strong>Repositorio:</strong> GrowPals/cotizaciones-manny</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-MX');
+    </script>
+</body>
+</html>
