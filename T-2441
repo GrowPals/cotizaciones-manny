@@ -2660,7 +2660,7 @@
                 </div>
                 <div class="hero-card">
                                         <div class="hero-image">
-                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761179193/notion-images/T-2441_1761179192570.png" alt="Imagen del proyecto" loading="lazy">
+                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761179955/notion-images/T-2441_1761179955096.png" alt="Imagen del proyecto" loading="lazy">
                     </div>
                     
                     <div class="hero-detail">
@@ -2947,23 +2947,23 @@
             </div>
             <div class="options-grid">
                 <div class="option-card fade-in" 
-                     data-titulo="Oferta preparada a medida" 
+                     data-titulo="Ajustes a su medida" 
                      data-descripcion="Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo" 
                      data-precio=""
                      tabindex="0"
                      role="button"
-                     aria-label="Opción: Oferta preparada a medida">
+                     aria-label="Opción: Ajustes a su medida">
                     <div class="option-content">
-                        <h3 class="option-title">Oferta preparada a medida</h3>
+                        <h3 class="option-title">Ajustes a su medida</h3>
                         <p class="option-description">Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo</p>
                     </div>
                     
                     <div class="precio-cotizar-container">
                         <button class="btn-whatsapp-precio" 
-                                data-titulo="Oferta preparada a medida"
+                                data-titulo="Ajustes a su medida"
                                 data-descripcion="Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo"
                                 type="button"
-                                aria-label="Consultar precio para Oferta preparada a medida">
+                                aria-label="Consultar precio para Ajustes a su medida">
                             PRECIO A COTIZAR
                         </button>
                     </div>
