@@ -2660,7 +2660,7 @@
                 </div>
                 <div class="hero-card">
                                         <div class="hero-image">
-                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761179955/notion-images/T-2441_1761179955096.png" alt="Imagen del proyecto" loading="lazy">
+                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761180277/notion-images/T-2441_1761180276927.png" alt="Imagen del proyecto" loading="lazy">
                     </div>
                     
                     <div class="hero-detail">
@@ -2790,7 +2790,7 @@
             </div>
             <div class="plus-cards">
                 <div class="plus-card fade-in">
-                    <h4>Mantenimiento preventivo anual con descuento</h4>
+                    <h4>Mantenimiento preventivo anual con 15% de descuento</h4>
                     <p>Le ofrecemos el mantenimiento preventivo anual con un 15% de descuento</p>
                 </div>
             </div>
@@ -2947,23 +2947,23 @@
             </div>
             <div class="options-grid">
                 <div class="option-card fade-in" 
-                     data-titulo="Ajustes a su medida" 
+                     data-titulo="Oferta ajustable a requerimientos específicos" 
                      data-descripcion="Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo" 
                      data-precio=""
                      tabindex="0"
                      role="button"
-                     aria-label="Opción: Ajustes a su medida">
+                     aria-label="Opción: Oferta ajustable a requerimientos específicos">
                     <div class="option-content">
-                        <h3 class="option-title">Ajustes a su medida</h3>
+                        <h3 class="option-title">Oferta ajustable a requerimientos específicos</h3>
                         <p class="option-description">Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo</p>
                     </div>
                     
                     <div class="precio-cotizar-container">
                         <button class="btn-whatsapp-precio" 
-                                data-titulo="Ajustes a su medida"
+                                data-titulo="Oferta ajustable a requerimientos específicos"
                                 data-descripcion="Esta oferta esta preparada de acuerdo a sus requerimientos específicos, sin embargo podemos ajustar si requiere algún cambio en las especificaciones del equipo"
                                 type="button"
-                                aria-label="Consultar precio para Ajustes a su medida">
+                                aria-label="Consultar precio para Oferta ajustable a requerimientos específicos">
                             PRECIO A COTIZAR
                         </button>
                     </div>
