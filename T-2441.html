@@ -154,6 +154,7 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
+
         /* ===== BUTTON SYSTEM ===== */
         .btn {
             display: inline-flex;
@@ -176,69 +177,84 @@
             line-height: 1.2;
             min-height: 44px;
         }
+
         .btn:focus-visible {
             outline: 2px solid var(--color-primary);
             outline-offset: 2px;
         }
+
         .btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
             pointer-events: none;
         }
+
         .btn-primary {
             background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
             color: var(--color-white);
             box-shadow: var(--shadow-btn-primary);
         }
+
         .btn-primary:hover:not(:disabled) {
             background: linear-gradient(135deg, var(--color-secondary-light), var(--color-secondary-lighter));
             transform: translateY(-2px);
             box-shadow: var(--shadow-btn-primary-hover);
         }
+
         .btn-investment {
             background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
             color: var(--color-white);
             box-shadow: var(--shadow-btn-investment);
         }
+
         .btn-investment:hover:not(:disabled) {
             background: linear-gradient(135deg, var(--color-primary-vibrant), var(--color-primary));
             transform: translateY(-2px);
         }
+
         .btn-accent {
             background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
             color: var(--color-white);
             box-shadow: var(--shadow-btn-accent);
         }
+
         .btn-accent:hover:not(:disabled) {
             background: linear-gradient(135deg, var(--color-accent-vibrant), var(--color-accent));
             transform: translateY(-2px);
         }
+
         .btn-whatsapp {
             background: linear-gradient(135deg, var(--color-whatsapp), var(--color-whatsapp-dark));
             color: var(--color-white);
             box-shadow: var(--shadow-lg);
         }
+
         .btn-whatsapp:hover:not(:disabled) {
             background: linear-gradient(135deg, var(--color-whatsapp-hover), var(--color-whatsapp-dark));
             transform: translateY(-2px);
         }
+
         /* Button States */
         .btn.loading {
             background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)) !important;
             pointer-events: none;
             animation: pulse 1.5s ease-in-out infinite;
         }
+
         .btn.success {
             background: linear-gradient(135deg, var(--color-success), #16a34a) !important;
         }
+
         .btn.error {
             background: linear-gradient(135deg, var(--color-danger), #dc2626) !important;
             animation: shake 0.6s ease-in-out;
         }
+
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.8; }
         }
+
         @keyframes shake {
             0%, 100% { transform: translateX(0); }
             25% { transform: translateX(-6px); }
@@ -512,6 +528,7 @@
             filter: brightness(1.2) contrast(1.2);
             transform: scale(1.02);
         }
+
         .hero-image:empty::after {
             content: 'Proyecto Manny';
             color: rgba(255, 255, 255, 0.8);
@@ -578,6 +595,7 @@
             font-weight: 500;
             color: var(--color-gray-600);
         }
+
         /* ===== MAIN PROPOSAL ===== */
         .main-proposal {
             padding: var(--space-4) 0;
@@ -681,11 +699,13 @@
             outline: none;
             background-color: var(--color-primary);
         }
+
         .pricing-card:hover,
         .pricing-card:focus-visible {
             transform: translateY(-6px) scale(1.02);
             box-shadow: 0 20px 25px -5px rgba(233, 30, 99, 0.4);
         }
+
         .pricing-card:active {
             transform: translateY(-3px) scale(1.01);
         }
@@ -727,6 +747,7 @@
             z-index: 2;
             margin-bottom: var(--space-1);
         }
+
         .pricing-action-button {
             background: linear-gradient(135deg, #22c55e, #16a34a);
             /* Fallback */
@@ -746,6 +767,7 @@
             box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
+
         .pricing-card:hover .pricing-action-button {
             background: linear-gradient(135deg, #16a34a, #15803d);
             border-color: rgba(255, 255, 255, 0.5);
@@ -791,6 +813,7 @@
                 var(--color-primary-vibrant) 75%, 
                 var(--color-primary) 100%);
         }
+
         .features .container {
             position: relative;
             z-index: 2;
@@ -882,6 +905,7 @@
             z-index: 3;
             transition: all var(--duration-normal) ease;
         }
+
         .feature-card:hover .feature-title {
             transform: scale(1.05);
             color: var(--color-primary-vibrant);
@@ -897,6 +921,7 @@
             z-index: 3;
             transition: all var(--duration-normal) ease;
         }
+
         .feature-card:hover .feature-description {
             color: rgba(255, 255, 255, 1);
         }
@@ -922,6 +947,7 @@
             border: none;
             outline: none;
         }
+
         .features-dot:focus-visible {
             outline: 2px solid var(--color-white);
             outline-offset: 2px;
@@ -949,6 +975,7 @@
             position: relative;
             z-index: 3;
         }
+
         /* ===== VIDEO SHOWCASE ===== */
         .video-showcase {
             padding: var(--space-8) 0;
@@ -965,6 +992,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .video-showcase .section-title {
             font-size: var(--text-xl);
             font-weight: 900;
@@ -975,18 +1003,21 @@
             letter-spacing: -0.02em;
             line-height: 1.1;
         }
+
         .video-showcase .section-subtitle {
             color: rgba(255, 255, 255, 0.9);
             font-size: var(--text-sm);
             max-width: 600px;
             margin: 0 auto;
         }
+
         .video-showcase-content {
             position: relative;
             z-index: 10;
             max-width: 1000px;
             margin: 0 auto;
         }
+
         .video-main-container {
             position: relative;
             background: rgba(255, 255, 255, 0.15);
@@ -1001,16 +1032,19 @@
             transition: all 0.4s ease;
             overflow: hidden;
         }
+
         .video-main-container:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
         }
+
         .video-header {
             text-align: center;
             margin-bottom: var(--space-3);
             position: relative;
             z-index: 3;
         }
+
         .video-title {
             font-size: var(--text-base);
             font-weight: 700;
@@ -1019,6 +1053,7 @@
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             line-height: 1.3;
         }
+
         .video-description {
             font-size: var(--text-xs);
             color: rgba(255, 255, 255, 0.8);
@@ -1027,6 +1062,7 @@
             max-width: 500px;
             margin: 0 auto;
         }
+
         .video-embed-container {
             position: relative;
             width: 100%;
@@ -1036,11 +1072,13 @@
             background: var(--color-gray-900);
             transition: all 0.4s ease;
         }
+
         .video-embed-container::after {
             content: '';
             display: block;
             padding-bottom: 56.25%;
         }
+
         .video-embed {
             position: absolute;
             top: 0;
@@ -1051,9 +1089,11 @@
             border-radius: var(--radius-xl);
             z-index: 2;
         }
+
         .video-embed-container:hover {
             transform: scale(1.02);
         }
+
         .video-placeholder {
             display: flex;
             align-items: center;
@@ -1322,6 +1362,60 @@
             font-size: var(--text-base);
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
+
+        /* Technical document button */
+        .ficha-tecnica-unica {
+            margin-top: var(--space-4);
+            text-align: center;
+            padding: var(--space-3) 0;
+            border-top: 2px solid var(--color-gray-200);
+        }
+
+        .btn-ficha-tecnica-unica {
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-xl);
+            font-size: var(--text-base);
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow-btn-primary);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            min-width: 250px;
+            white-space: nowrap;
+            user-select: none;
+            font-family: inherit;
+            padding: var(--space-3) var(--space-6);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            min-height: 48px;
+        }
+
+        .btn-ficha-tecnica-unica:hover:not(:disabled) {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: var(--shadow-btn-primary-hover);
+            background: linear-gradient(135deg, var(--color-secondary-light), var(--color-secondary-lighter));
+        }
+
+        .btn-ficha-tecnica-unica:focus-visible {
+            outline: 2px solid var(--color-secondary);
+            outline-offset: 2px;
+        }
+
+        .ficha-unica-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            fill: currentColor;
+        }
+        
         /* ===== OPTIONS SECTION ===== */
         .options {
             padding: var(--space-8) 0;
@@ -1361,6 +1455,7 @@
             /* Better accessibility */
             outline: none;
         }
+
         .option-card:focus-visible {
             outline: 2px solid var(--color-primary);
             outline-offset: 2px;
@@ -1816,6 +1911,7 @@
             box-shadow: 0 20px 25px rgba(4, 120, 87, 0.4);
             background: linear-gradient(135deg, var(--color-whatsapp-hover), #0f7268);
         }
+
         .cta-btn-whatsapp:focus-visible {
             outline: 2px solid var(--color-whatsapp);
             outline-offset: 2px;
@@ -2020,6 +2116,7 @@
             opacity: 1;
             transform: scale(1);
         }
+
         /* ===== TOAST NOTIFICATIONS ===== */
         .toast-notification {
             position: fixed;
@@ -2039,15 +2136,19 @@
             cursor: pointer;
             user-select: none;
         }
+
         .toast-success {
             background: linear-gradient(135deg, #059669, #047857);
         }
+
         .toast-warning {
             background: linear-gradient(135deg, #d97706, #b45309);
         }
+
         .toast-error {
             background: linear-gradient(135deg, #dc2626, #b91c1c);
         }
+
         .toast-info {
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
         }
@@ -2356,6 +2457,7 @@
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
+
             .features-grid {
                 grid-template-columns: repeat(4, 1fr);
                 gap: var(--space-5);
@@ -2395,6 +2497,7 @@
                 margin-bottom: var(--space-3);
                 border-radius: var(--radius-xl);
             }
+
             .hero-image:empty::after {
                 content: 'Proyecto Manny';
                 color: rgba(255, 255, 255, 0.9);
@@ -2469,203 +2572,7 @@
                 display: block !important;
             }
         }
-        /* ===== MÚLTIPLES FICHAS TÉCNICAS ===== */
-        .fichas-tecnicas-container {
-            margin-top: var(--space-4);
-            text-align: center;
-            padding: var(--space-3) 0;
-            border-top: 2px solid var(--color-gray-200);
-        }
 
-        .fichas-tecnicas-grid {
-            display: grid;
-            gap: var(--space-3);
-            max-width: 1000px;
-            margin: 0 auto;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-
-        /* ===== DESKTOP - LAYOUTS ESPECÍFICOS POR CANTIDAD ===== */
-        @media (min-width: 768px) {
-            /* 1 ficha: centrada, tamaño grande */
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(1):nth-last-child(1)) {
-                grid-template-columns: minmax(250px, 400px);
-                justify-content: center;
-            }
-
-            /* 2 fichas: dos columnas */
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(2):nth-last-child(1)) {
-                grid-template-columns: repeat(2, minmax(200px, 300px));
-                justify-content: center;
-            }
-
-            /* 3 fichas: tres columnas */
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(3):nth-last-child(1)) {
-                grid-template-columns: repeat(3, minmax(180px, 250px));
-                justify-content: center;
-            }
-
-            /* 4 fichas: 2x2 grid */
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(4):nth-last-child(1)) {
-                grid-template-columns: repeat(2, minmax(200px, 300px));
-                justify-content: center;
-                max-width: 650px;
-            }
-
-            /* 5 fichas: 3 arriba, 2 abajo centradas */
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(5):nth-last-child(1)) {
-                grid-template-columns: repeat(3, minmax(180px, 250px));
-                justify-content: center;
-            }
-            
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(5):nth-last-child(1)) .btn-ficha-tecnica:nth-child(4) {
-                grid-column: 1;
-                grid-row: 2;
-            }
-            
-            .fichas-tecnicas-grid:has(.btn-ficha-tecnica:nth-child(5):nth-last-child(1)) .btn-ficha-tecnica:nth-child(5) {
-                grid-column: 3;
-                grid-row: 2;
-            }
-        }
-
-        .btn-ficha-tecnica {
-            background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
-            color: var(--color-white);
-            border: none;
-            border-radius: var(--radius-xl);
-            font-size: var(--text-sm);
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            box-shadow: var(--shadow-btn-primary);
-            text-decoration: none;
-            position: relative;
-            overflow: hidden;
-            text-transform: none;
-            letter-spacing: 0.01em;
-            user-select: none;
-            font-family: inherit;
-            padding: var(--space-3) var(--space-4);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-2);
-            min-height: 80px;
-            text-align: center;
-        }
-
-        .btn-ficha-tecnica:hover:not(:disabled) {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: var(--shadow-btn-primary-hover);
-            background: linear-gradient(135deg, var(--color-secondary-light), var(--color-secondary-lighter));
-        }
-
-        .btn-ficha-tecnica:focus-visible {
-            outline: 2px solid var(--color-secondary);
-            outline-offset: 2px;
-        }
-
-        .ficha-icon {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            fill: currentColor;
-        }
-
-        .ficha-text {
-            font-size: var(--text-xs);
-            font-weight: 700;
-            line-height: 1.2;
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        /* Estados de botón */
-        .btn-ficha-tecnica.loading {
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)) !important;
-            pointer-events: none;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-
-        .btn-ficha-tecnica.success {
-            background: linear-gradient(135deg, var(--color-success), #16a34a) !important;
-        }
-
-        .btn-ficha-tecnica.error {
-            background: linear-gradient(135deg, var(--color-danger), #dc2626) !important;
-            animation: shake 0.6s ease-in-out;
-        }
-
-        /* ===== MÓVIL - SIEMPRE SCROLL HORIZONTAL ===== */
-        @media (max-width: 767px) {
-            .fichas-tecnicas-container {
-                padding: var(--space-2) 0;
-                margin-top: var(--space-3);
-            }
-            
-            .fichas-tecnicas-grid {
-                display: flex !important;
-                flex-direction: row !important;
-                grid-template-columns: none !important;
-                gap: var(--space-3);
-                max-width: 100%;
-                overflow-x: auto;
-                overflow-y: hidden;
-                scroll-snap-type: x mandatory;
-                -webkit-overflow-scrolling: touch;
-                padding: 0 var(--space-4) var(--space-2) var(--space-4);
-                margin: 0 calc(-1 * var(--space-4));
-                scroll-behavior: smooth;
-            }
-            
-            /* Scrollbar styling para móvil */
-            .fichas-tecnicas-grid::-webkit-scrollbar {
-                height: 4px;
-            }
-            
-            .fichas-tecnicas-grid::-webkit-scrollbar-track {
-                background: rgba(0, 0, 0, 0.1);
-                border-radius: var(--radius-full);
-            }
-            
-            .fichas-tecnicas-grid::-webkit-scrollbar-thumb {
-                background: var(--color-secondary);
-                border-radius: var(--radius-full);
-            }
-            
-            .btn-ficha-tecnica {
-                flex-direction: row;
-                min-height: 60px;
-                min-width: 280px;
-                max-width: 280px;
-                flex-shrink: 0;
-                padding: var(--space-3) var(--space-4);
-                text-align: left;
-                justify-content: flex-start;
-                scroll-snap-align: start;
-                gap: var(--space-3);
-            }
-            
-            .ficha-icon {
-                width: 18px;
-                height: 18px;
-                flex-shrink: 0;
-            }
-            
-            .ficha-text {
-                font-size: var(--text-sm);
-                text-align: left;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                line-height: 1.3;
-                flex: 1;
-            }
-        }
         /* ===== ACCESSIBILITY ENHANCEMENTS ===== */
         @media (prefers-reduced-motion: reduce) {
             *,
@@ -2676,6 +2583,7 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
         /* ===== HIGH CONTRAST MODE ===== */
         @media (prefers-contrast: high) {
             :root {
@@ -2684,6 +2592,7 @@
                 --color-gray-700: #000000;
             }
         }
+
         /* ===== PRINT STYLES ===== */
         @media print {
             .navbar,
@@ -2727,7 +2636,6 @@
                     <li role="none"><a href="#inicio" role="menuitem">Inicio</a></li>
                     <li role="none"><a href="#propuesta" role="menuitem">Propuesta</a></li>
                     <li role="none"><a href="#ventajas" role="menuitem">Ventajas</a></li>
-                    <li role="none"><a href="#video-showcase" role="menuitem">Video</a></li>
                     <li role="none"><a href="#plus" role="menuitem">Plus</a></li>
                     <li role="none"><a href="#desglose" role="menuitem">Desglose</a></li>
                     <li role="none"><a href="#opciones" role="menuitem">Opciones</a></li>
@@ -2739,6 +2647,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
@@ -2750,7 +2659,7 @@
                 </div>
                 <div class="hero-card">
                                         <div class="hero-image">
-                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761379237/notion-images/T-2441_1761379237297.png" alt="Imagen del proyecto" loading="lazy">
+                        <img src="https://res.cloudinary.com/dtekzmco3/image/upload/v1761379237/notion-images/T-2441_1761379237297.png" alt="Imagen del proyecto - Servicios Manny" loading="lazy">
                     </div>
                     
                     <div class="hero-detail">
@@ -2758,6 +2667,10 @@
                         <span class="hero-detail-value">Narciso Meza</span>
                     </div>
                     
+                    <div class="hero-detail">
+                        <span class="hero-detail-label">Atendido por:</span>
+                        <span class="hero-detail-value">Narciso Meza</span>
+                    </div>
                     
                     <div class="hero-detail">
                         <span class="hero-detail-label">Cotización:</span>
@@ -2777,6 +2690,7 @@
             </div>
         </div>
     </section>
+
     <!-- Main Proposal Section -->
     <section class="main-proposal" id="propuesta">
         <div class="container">
@@ -2788,25 +2702,37 @@
                 <div>
                     <p class="pricing-description">Gracias Sr. Narciso por permitirnos presentar nuestra SOLUCIÓN de climatización para su hogar en Irapuato. Le proponemos un equipo Mirage de 2 TON con tecnología inverter, diseñado específicamente para optimizar el consumo energético y brindar un ambiente confortable incluso en los días más calurosos del Bajío. Este equipo garantiza una temperatura constante y un ahorro significativo en su recibo de luz desde el primer mes.</p>
                     
+                    <div class="pricing-breakdown">
+                        <div class="pricing-row">
+                            <span class="pricing-label">Subtotal</span>
+                            <span class="pricing-amount money">$4440</span>
+                        </div>
+                        
+                        <div class="pricing-row iva-row">
+                            <span class="pricing-label">IVA (16%)</span>
+                            <span class="pricing-amount money">$710.4</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <button class="pricing-card scale-in" id="pricingCardClickeable" 
                      data-ticket-numero="T-2441" 
-                     data-total="4440" 
-                     aria-label="Aceptar cotización por $4440"
+                     data-total="5150.4" 
+                     aria-label="Aceptar cotización por $5150.4"
                      type="button">
                     <div class="pricing-badge">Inversión Total</div>
                     <div class="pricing-total">
-                        <span class="pricing-currency">$</span><span class="money">4440</span>
+                        <span class="pricing-currency">$</span><span class="money">5150.4</span>
                     </div>
                     <div class="pricing-period">
-                        Precio final
+                        Precio final incluye IVA
                     </div>
                     <div class="pricing-action-button">ACEPTAR COTIZACIÓN</div>
                 </button>
             </div>
         </div>
     </section>
+
     <!-- Features Section -->
     <section class="features" id="ventajas">
         <div class="container">
@@ -2837,33 +2763,9 @@
             <div class="features-swipe-hint" id="featuresSwipeHint" aria-hidden="true">← Desliza para ver más →</div>
         </div>
     </section>
+
     <!-- Video Showcase Section -->
-    <section class="video-showcase" id="video-showcase">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">
-                        Mira cómo trabajamos
-                </h2>
-            </div>
-            
-            <div class="video-showcase-content">
-                <div class="video-main-container scale-in">
-                    
-                    <div class="video-embed-container">
-                        <iframe 
-                            class="video-embed"
-                            src="https://www.youtube.com/watch?v&#x3D;8eWK3-Mx8Vw"
-                            title="Video - Manny"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Plus Services -->
     <section class="plus-section" id="plus">
         <div class="container">
@@ -2878,6 +2780,7 @@
             </div>
         </div>
     </section>
+
     <!-- Desglose Section -->
     <section class="desglose" id="desglose">
         <div class="container">
@@ -2950,17 +2853,26 @@
                             </tr>
                         </tbody>
                         <tfoot>
+                            <tr role="row">
+                                <td colspan="5" class="text-right total-label-cell"><strong>Subtotal:</strong></td>
+                                <td class="text-right"><strong class="money">$4440</strong></td>
+                            </tr>
                             
+                            <tr role="row">
+                                <td colspan="5" class="text-right total-label-cell"><strong>IVA (16%):</strong></td>
+                                <td class="text-right"><strong class="money">$710.4</strong></td>
+                            </tr>
                             
                             <tr role="row">
                                 <td colspan="5" class="text-right total-label-cell"><strong>TOTAL:</strong></td>
                                 <td class="text-right col-total">
-                                    <strong class="money">$4440</strong>
+                                    <strong class="money">$5150.4</strong>
                                 </td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
+
                 <!-- Mobile Cards -->
                 <div class="table-mobile">
                     <div class="mobile-item">
@@ -3082,38 +2994,44 @@
                     
                     <!-- Mobile Totals -->
                     <div class="mobile-totals">
+                        <div class="mobile-total-row">
+                            <div class="mobile-total-label">Subtotal:</div>
+                            <div class="mobile-total-amount"><span class="money">$4440</span></div>
+                        </div>
                         
+                        <div class="mobile-total-row">
+                            <div class="mobile-total-label">IVA (16%):</div>
+                            <div class="mobile-total-amount"><span class="money">$710.4</span></div>
+                        </div>
                         
                         <div class="mobile-total-row">
                             <div class="mobile-total-label">TOTAL:</div>
                             <div class="mobile-total-amount">
-                                <span class="money">$4440</span>
+                                <span class="money">$5150.4</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Múltiples fichas técnicas -->
 
-                <!-- Retrocompatibilidad formato antiguo -->
-                <div class="fichas-tecnicas-container">
-                    <div class="fichas-tecnicas-grid">
-                        <button class="btn-ficha-tecnica" 
-                                data-ficha-url="https://images.mirage.mx/pdf/specs/ft_INVERTERX.pdf?utm_source&#x3D;chatgpt.com" 
-                                aria-label="Abrir documentos técnicos"
-                                type="button">
-                            <svg class="ficha-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                                <path d="M8,12V14H16V12H8M8,16V18H13V16H8Z"/>
-                            </svg>
-                            <span class="ficha-text">
-                                Ficha Técnica
-                            </span>
-                        </button>
-                    </div>
+                <!-- Technical Documents Button -->
+                <div class="ficha-tecnica-unica">
+                    <button class="btn-ficha-tecnica-unica" 
+                            data-ficha-url="https://images.mirage.mx/pdf/specs/ft_INVERTERX.pdf?utm_source&#x3D;chatgpt.com" 
+                            aria-label="Abrir documentos técnicos"
+                            type="button">
+                        <svg class="ficha-unica-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            <path d="M8,12V14H16V12H8M8,16V18H13V16H8Z"/>
+                        </svg>
+                        <span class="ficha-unica-text">
+                            Ficha Técnica
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Options Section -->
     <section class="options" id="opciones">
         <div class="container">
@@ -3123,23 +3041,23 @@
             </div>
             <div class="options-grid">
                 <div class="option-card fade-in" 
-                     data-titulo="Equipo Mirage inverter 2 TON recomendado" 
+                     data-titulo="Equipo Mirage inverter 2 TON eficiente" 
                      data-descripcion="Esta propuesta está diseñada con un equipo Mirage inverter de 2 TON. Aunque existen equipos más económicos de eficiencia estándar, recomendamos esta opción inverter por su menor consumo eléctrico y mejor control de temperatura, lo que se traduce en mayor ahorro y confort a largo plazo." 
                      data-precio=""
                      tabindex="0"
                      role="button"
-                     aria-label="Opción: Equipo Mirage inverter 2 TON recomendado">
+                     aria-label="Opción: Equipo Mirage inverter 2 TON eficiente">
                     <div class="option-content">
-                        <h3 class="option-title">Equipo Mirage inverter 2 TON recomendado</h3>
+                        <h3 class="option-title">Equipo Mirage inverter 2 TON eficiente</h3>
                         <p class="option-description">Esta propuesta está diseñada con un equipo Mirage inverter de 2 TON. Aunque existen equipos más económicos de eficiencia estándar, recomendamos esta opción inverter por su menor consumo eléctrico y mejor control de temperatura, lo que se traduce en mayor ahorro y confort a largo plazo.</p>
                     </div>
                     
                     <div class="precio-cotizar-container">
                         <button class="btn-whatsapp-precio" 
-                                data-titulo="Equipo Mirage inverter 2 TON recomendado"
+                                data-titulo="Equipo Mirage inverter 2 TON eficiente"
                                 data-descripcion="Esta propuesta está diseñada con un equipo Mirage inverter de 2 TON. Aunque existen equipos más económicos de eficiencia estándar, recomendamos esta opción inverter por su menor consumo eléctrico y mejor control de temperatura, lo que se traduce en mayor ahorro y confort a largo plazo."
                                 type="button"
-                                aria-label="Consultar precio para Equipo Mirage inverter 2 TON recomendado">
+                                aria-label="Consultar precio para Equipo Mirage inverter 2 TON eficiente">
                             PRECIO A COTIZAR
                         </button>
                     </div>
@@ -3147,6 +3065,7 @@
             </div>
         </div>
     </section>
+
     <!-- Testimonials -->
     <section class="testimonials" id="testimonios">
         <div class="container">
@@ -3212,6 +3131,7 @@
             </div>
         </div>
     </section>
+
     <!-- CTA Section -->
     <section class="cta-section" id="contacto">
         <div class="container">
@@ -3230,6 +3150,7 @@
             </div>
         </div>
     </section>
+
     <!-- Guarantee -->
     <section class="guarantee">
         <div class="container">
@@ -3239,11 +3160,12 @@
                 </div>
                 <div>
                     <h3>Garantía de Satisfacción Total</h3>
-                    <p>Espero que nuestra propuesta cumpla con sus expectativas; de lo contrario, sus comentarios son importantes, ya que podemos superar cualquier propuesta en costo o en valor agregado.</p>
+                    <p>Garantía de satisfacción total o no pagas - Respaldamos nuestro trabajo al 100%</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Terms -->
     <section class="terms">
         <div class="container">
@@ -3254,7 +3176,7 @@
             <div class="terms-grid">
                 <div class="terms-card fade-in">
                     <h4>Vigencia</h4>
-                    <p>2 Semanas</p>
+                    <p>15 días naturales</p>
                 </div>
                 <div class="terms-card fade-in">
                     <h4>Condiciones de Pago</h4>
@@ -3267,6 +3189,7 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -3287,15 +3210,18 @@
             </div>
         </div>
     </footer>
+
     <!-- Enhanced JavaScript Application -->
     <script>
         'use strict';
+
         // Handlebars helper for equality comparison
         if (typeof Handlebars !== 'undefined') {
             Handlebars.registerHelper('eq', function(a, b) {
                 return a === b;
             });
         }
+
         /**
          * =====================================
          * MANNY PROFESSIONAL APPLICATION
@@ -3303,6 +3229,7 @@
          * Version: 5.0 - Enterprise Grade
          * =====================================
          */
+
         // Application Configuration
         const MANNY_CONFIG = Object.freeze({
             WHATSAPP_NUMBER: '524625905222',
@@ -3336,6 +3263,7 @@
                 LOAD: 'load'
             }
         });
+
         /**
          * Utility Functions Module
          * @namespace Utils
@@ -3358,6 +3286,7 @@
                     timeout = setTimeout(later, wait);
                 };
             },
+
             /**
              * Throttle function execution
              * @param {Function} func - Function to throttle
@@ -3374,6 +3303,7 @@
                     }
                 };
             },
+
             /**
              * Rate limit function calls
              * @param {Function} func - Function to rate limit
@@ -3390,6 +3320,7 @@
                     }
                 };
             },
+
             /**
              * Check if element is in viewport
              * @param {Element} element - Element to check
@@ -3406,6 +3337,7 @@
                     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
                 );
             },
+
             /**
              * Sanitize HTML string
              * @param {string} str - String to sanitize
@@ -3418,6 +3350,7 @@
                 temp.textContent = str;
                 return temp.innerHTML;
             },
+
             /**
              * Format currency number
              * @param {number|string} value - Value to format
@@ -3432,6 +3365,7 @@
                     maximumFractionDigits: 2
                 });
             },
+
             /**
              * Get current device type
              * @returns {string} Device type
@@ -3442,6 +3376,7 @@
                 if (width <= MANNY_CONFIG.BREAKPOINTS.DESKTOP) return 'tablet';
                 return 'desktop';
             },
+
             /**
              * Create DOM element with attributes
              * @param {string} tag - HTML tag
@@ -3468,6 +3403,7 @@
                 
                 return element;
             },
+
             /**
              * Clean text for WhatsApp message
              * @param {string} text - Text to clean
@@ -3484,6 +3420,7 @@
                     .trim();
             }
         };
+
         /**
          * Event Manager for centralized event handling
          * @class EventManager
@@ -3493,6 +3430,7 @@
                 this.events = new Map();
                 this.listeners = new WeakMap();
             }
+
             /**
              * Add event listener
              * @param {Element|Window} element - Target element
@@ -3505,6 +3443,7 @@
                     console.warn('EventManager: Invalid parameters for event listener');
                     return;
                 }
+
                 element.addEventListener(event, handler, options);
                 
                 // Store for cleanup
@@ -3519,6 +3458,7 @@
                 
                 elementEvents.get(event).add({ handler, options });
             }
+
             /**
              * Remove event listener
              * @param {Element|Window} element - Target element
@@ -3541,6 +3481,7 @@
                     });
                 }
             }
+
             /**
              * Clean up all events for an element
              * @param {Element} element - Target element
@@ -3558,6 +3499,7 @@
                 this.listeners.delete(element);
             }
         }
+
         /**
          * State Management System
          * @class StateManager
@@ -3567,6 +3509,7 @@
                 this.state = new Map();
                 this.listeners = new Map();
             }
+
             /**
              * Set state value
              * @param {string} key - State key
@@ -3587,6 +3530,7 @@
                     });
                 }
             }
+
             /**
              * Get state value
              * @param {string} key - State key
@@ -3595,6 +3539,7 @@
             getState(key) {
                 return this.state.get(key);
             }
+
             /**
              * Subscribe to state changes
              * @param {string} key - State key to watch
@@ -3616,6 +3561,7 @@
                 };
             }
         }
+
         /**
          * Main Application Class
          * @class MannyProfessionalApp
@@ -3631,6 +3577,7 @@
                 // Initialize application
                 this.initialize();
             }
+
             /**
              * Initialize the application
              * @private
@@ -3649,6 +3596,7 @@
                     console.error('❌ Application initialization failed:', error);
                 }
             }
+
             /**
              * Cache frequently used DOM elements
              * @private
@@ -3663,6 +3611,7 @@
                     featuresSwipeHint: '#featuresSwipeHint',
                     desktopTable: '#desktopTable'
                 };
+
                 Object.entries(elementSelectors).forEach(([key, selector]) => {
                     const element = document.querySelector(selector);
                     if (element) {
@@ -3670,6 +3619,7 @@
                     }
                 });
             }
+
             /**
              * Initialize application state
              * @private
@@ -3687,6 +3637,7 @@
                     }
                 });
             }
+
             /**
              * Setup Desglose Adaptativo
              * @private
@@ -3706,6 +3657,7 @@
                     console.error('Error en setupDesgloseAdaptativo:', error);
                 }
             }
+
             /**
              * Detect unit prices in items
              * @private
@@ -3733,6 +3685,7 @@
                 
                 return tienePreciosUnitarios;
             }
+
             /**
              * Apply design adaptations based on unit prices presence
              * @private
@@ -3745,6 +3698,7 @@
                 // Mobile adaptations
                 this.adaptarTablaMobile(tienePreciosUnitarios);
             }
+
             /**
              * Adapt desktop table based on unit prices
              * @private
@@ -3779,6 +3733,7 @@
                     console.log('📊 Tabla desktop mantiene precio unitario');
                 }
             }
+
             /**
              * Adapt mobile table based on unit prices
              * @private
@@ -3803,6 +3758,7 @@
                 
                 console.log(`📱 Tabla móvil adaptada: ${tienePreciosUnitarios ? '3 columnas' : '2 columnas'}`);
             }
+
             /**
              * Setup rate limited functions
              * @private
@@ -3813,6 +3769,7 @@
                     Utils.rateLimit(this.handleWhatsAppClick.bind(this), MANNY_CONFIG.RATE_LIMIT_DELAY)
                 );
             }
+
             /**
              * Bind application events
              * @private
@@ -3841,9 +3798,11 @@
                         this.closeMenu();
                     }
                 });
+
                 // Setup rate limiting
                 this.setupRateLimiting();
             }
+
             /**
              * Check if element is menu-related
              * @private
@@ -3857,6 +3816,7 @@
                 return (mobileToggle && mobileToggle.contains(element)) ||
                        (navLinks && navLinks.contains(element));
             }
+
             /**
              * Enhanced global click event handler with delegation
              * @private
@@ -3871,18 +3831,21 @@
                     this.toggleMenu();
                     return;
                 }
+
                 // Pricing card
                 if (target.closest('#pricingCardClickeable')) {
                     event.preventDefault();
                     this.handlePricingCardClick();
                     return;
                 }
+
                 // Technical documents button
-                if (target.closest('.btn-ficha-tecnica')) {
+                if (target.closest('.btn-ficha-tecnica-unica')) {
                     event.preventDefault();
-                    this.handleTechnicalDocumentsClick(target.closest('.btn-ficha-tecnica'));
+                    this.handleTechnicalDocumentsClick(target.closest('.btn-ficha-tecnica-unica'));
                     return;
                 }
+
                 // WhatsApp buttons - rate limited
                 if (target.closest('.btn-whatsapp-precio')) {
                     event.preventDefault();
@@ -3893,22 +3856,26 @@
                     }
                     return;
                 }
+
                 // Option cards (only if not a WhatsApp button inside)
                 if (target.closest('.option-card') && !target.closest('.btn-whatsapp-precio')) {
                     this.handleOptionCardClick(target.closest('.option-card'));
                     return;
                 }
+
                 // Smooth scroll navigation
                 if (target.closest('a[href^="#"]')) {
                     this.handleSmoothScrollClick(event, target.closest('a[href^="#"]'));
                     return;
                 }
+
                 // Features navigation dots
                 if (target.classList.contains('features-dot')) {
                     this.handleFeaturesDotClick(target);
                     return;
                 }
             }
+
             /**
              * Global keydown event handler
              * @private
@@ -3922,6 +3889,7 @@
                     this.closeMenu();
                     return;
                 }
+
                 // Enter/Space for interactive elements
                 if ((key === 'Enter' || key === ' ') && 
                     (target.closest('.option-card') || target.closest('#pricingCardClickeable') || target.closest('.btn-whatsapp-precio'))) {
@@ -3929,6 +3897,7 @@
                     target.click();
                 }
             }
+
             /**
              * Scroll event handler
              * @private
@@ -3936,6 +3905,7 @@
             handleScroll() {
                 this.updateScrollIntersections();
             }
+
             /**
              * Resize event handler
              * @private
@@ -3948,6 +3918,7 @@
                 const tienePreciosUnitarios = this.stateManager.getState('tienePreciosUnitarios');
                 this.aplicarAdaptacionesDesglose(tienePreciosUnitarios);
             }
+
             /**
              * Handle device type changes
              * @private
@@ -3961,6 +3932,7 @@
                 document.body.classList.toggle('mobile-view', deviceType === 'mobile');
                 this.updateFeaturesCarousel();
             }
+
             /**
              * Initialize application components
              * @private
@@ -3979,6 +3951,7 @@
                     }
                 });
             }
+
             /**
              * Setup accessibility features
              * @private
@@ -3994,6 +3967,7 @@
                     });
                 }
             }
+
             /**
              * Toggle mobile menu
              */
@@ -4013,6 +3987,7 @@
                     mobileToggle.setAttribute('aria-expanded', isOpen.toString());
                 }
             }
+
             /**
              * Close mobile menu
              */
@@ -4031,6 +4006,7 @@
                     mobileToggle.setAttribute('aria-expanded', 'false');
                 }
             }
+
             /**
              * Handle smooth scroll navigation
              * @private
@@ -4051,11 +4027,13 @@
                         top: targetPosition,
                         behavior: 'smooth'
                     });
+
                     if (this.stateManager.getState('menuOpen')) {
                         this.closeMenu();
                     }
                 }
             }
+
             /**
              * Handle pricing card click
              * @private
@@ -4072,6 +4050,7 @@
                     whatsappService.sendInvestmentMessage(ticketNumber, total);
                 }
             }
+
             /**
              * Handle option card click
              * @private
@@ -4090,6 +4069,7 @@
                 }
                 this.addClickEffect(optionCard);
             }
+
             /**
              * WhatsApp click handler with rate limiting
              * @private
@@ -4100,6 +4080,7 @@
                     console.error('WhatsApp button not found');
                     return;
                 }
+
                 console.log('WhatsApp button clicked (rate limited):', button.getAttribute('data-titulo'));
                 
                 // Set button loading state
@@ -4143,6 +4124,7 @@
                     }, 3000);
                 }
             }
+
             /**
              * Handle technical documents button click
              * @private
@@ -4179,6 +4161,7 @@
                     setTimeout(() => this.resetButtonState(button), 3000);
                 }
             }
+
             /**
              * Handle features dot click
              * @private
@@ -4194,6 +4177,7 @@
                     }
                 }
             }
+
             /**
              * Update features carousel based on device type
              */
@@ -4203,6 +4187,7 @@
                     featuresCarousel.update();
                 }
             }
+
             /**
              * Set button state with visual feedback
              * @private
@@ -4227,7 +4212,7 @@
                         }
                         
                         // Handle different button structures
-                        const textElement = button.querySelector('.ficha-text') || button;
+                        const textElement = button.querySelector('.ficha-unica-text') || button;
                         textElement.textContent = text;
                     }
                     
@@ -4238,6 +4223,7 @@
                     console.warn('Button state change error:', error);
                 }
             }
+
             /**
              * Reset button to original state
              * @private
@@ -4253,7 +4239,7 @@
                     // Restore original text
                     const originalText = button.getAttribute('data-original-text');
                     if (originalText) {
-                        const textElement = button.querySelector('.ficha-text') || button;
+                        const textElement = button.querySelector('.ficha-unica-text') || button;
                         textElement.textContent = originalText;
                     }
                     
@@ -4264,6 +4250,7 @@
                     console.warn('Button state reset error:', error);
                 }
             }
+
             /**
              * Add visual click effect to element
              * @private
@@ -4277,6 +4264,7 @@
                     element.style.transform = '';
                 }, 150);
             }
+
             /**
              * Handle scroll intersections
              * @private
@@ -4284,6 +4272,7 @@
             updateScrollIntersections() {
                 // Implementation for scroll intersections if needed
             }
+
             /**
              * Get component by name
              * @param {string} name - Component name
@@ -4292,6 +4281,7 @@
             getComponent(name) {
                 return this.components.get(name);
             }
+
             /**
              * Show notification
              * @param {string} message - Notification message
@@ -4304,6 +4294,7 @@
                     notificationSystem.show(message, type, duration);
                 }
             }
+
             /**
              * Cleanup application resources
              */
@@ -4327,6 +4318,7 @@
                 console.log('🧹 Manny Professional App destroyed');
             }
         }
+
         /**
          * Money Formatter Component
          * @class MoneyFormatter
@@ -4335,6 +4327,7 @@
             initialize() {
                 this.formatAllMoneyElements();
             }
+
             formatAllMoneyElements() {
                 try {
                     document.querySelectorAll('.money').forEach(element => {
@@ -4344,6 +4337,7 @@
                     console.warn('Money formatting error:', error);
                 }
             }
+
             formatElement(element) {
                 if (!element || !element.textContent) return;
                 
@@ -4353,6 +4347,7 @@
                 }
             }
         }
+
         /**
          * Features Carousel Component
          * @class FeaturesCarousel
@@ -4364,11 +4359,13 @@
                 this.featuresNavigation = app.elements.get('featuresNavigation');
                 this.featuresSwipeHint = app.elements.get('featuresSwipeHint');
             }
+
             initialize() {
                 if (!this.featuresGrid || !this.featuresNavigation) return;
                 
                 this.setupCarousel();
             }
+
             setupCarousel() {
                 const featureCards = this.featuresGrid.querySelectorAll('.feature-card');
                 
@@ -4387,6 +4384,7 @@
                     this.hideNavigation();
                 }
             }
+
             showNavigation() {
                 if (this.featuresNavigation) {
                     this.featuresNavigation.style.display = 'flex';
@@ -4395,6 +4393,7 @@
                     this.featuresSwipeHint.style.display = 'block';
                 }
             }
+
             hideNavigation() {
                 if (this.featuresNavigation) {
                     this.featuresNavigation.style.display = 'none';
@@ -4403,6 +4402,7 @@
                     this.featuresSwipeHint.style.display = 'none';
                 }
             }
+
             setupDots(featureCards) {
                 this.featuresNavigation.innerHTML = '';
                 
@@ -4419,6 +4419,7 @@
                     this.featuresNavigation.appendChild(dot);
                 });
             }
+
             setupScrollListener() {
                 let scrollTimeout;
                 
@@ -4441,6 +4442,7 @@
                     }
                 });
             }
+
             scrollToFeature(index) {
                 const featureCards = this.featuresGrid.querySelectorAll('.feature-card');
                 const targetCard = featureCards[index];
@@ -4457,6 +4459,7 @@
                     });
                 }
             }
+
             updateActiveDot() {
                 const featureCards = this.featuresGrid.querySelectorAll('.feature-card');
                 if (featureCards.length === 0) return;
@@ -4473,10 +4476,12 @@
                     dot.setAttribute('aria-selected', index === activeIndex ? 'true' : 'false');
                 });
             }
+
             update() {
                 this.setupCarousel();
             }
         }
+
         /**
          * Intersection Observer Manager
          * @class IntersectionObserverManager
@@ -4487,6 +4492,7 @@
                 
                 this.setupAnimationObserver();
             }
+
             setupAnimationObserver() {
                 const observerOptions = {
                     threshold: 0.1,
@@ -4501,11 +4507,13 @@
                         }
                     });
                 }, observerOptions);
+
                 document.querySelectorAll('.fade-in, .scale-in').forEach(el => {
                     animationObserver.observe(el);
                 });
             }
         }
+
         /**
          * Enhanced WhatsApp Service
          * @class WhatsAppService
@@ -4516,9 +4524,11 @@
                 this.whatsappNumber = MANNY_CONFIG.WHATSAPP_NUMBER;
                 console.log('WhatsApp Service initialized with number:', this.whatsappNumber);
             }
+
             initialize() {
                 console.log('WhatsApp Service ready');
             }
+
             /**
              * Send investment message for main pricing card
              * @param {string} ticketNumber - Ticket number
@@ -4529,6 +4539,7 @@
                 
                 this.sendMessage(message);
             }
+
             /**
              * Send option message for priced options
              * @param {string} titulo - Option title
@@ -4547,6 +4558,7 @@
                 
                 this.sendMessage(message);
             }
+
             /**
              * Enhanced quote message for options without price
              * @param {string} tituloOpcion - Option title
@@ -4575,6 +4587,7 @@
                 
                 this.sendMessage(message);
             }
+
             /**
              * Get ticket number from hero section
              * @private
@@ -4599,6 +4612,7 @@
                     return '';
                 }
             }
+
             /**
              * Enhanced message sending with better error handling
              * @private
@@ -4622,6 +4636,7 @@
                     this.handleWhatsAppError(error);
                 }
             }
+
             /**
              * Enhanced WhatsApp opening with multiple fallbacks
              * @private
@@ -4669,6 +4684,7 @@
                     }
                 }
             }
+
             /**
              * Handle WhatsApp errors with user feedback
              * @private
@@ -4690,6 +4706,7 @@
                 }
             }
         }
+
         /**
          * Notification System
          * @class NotificationSystem
@@ -4698,9 +4715,11 @@
             constructor() {
                 this.notifications = new Set();
             }
+
             initialize() {
                 console.log('Notification System ready');
             }
+
             show(message, type = 'info', duration = MANNY_CONFIG.TOAST_DURATION) {
                 // Remove existing notifications of the same type
                 document.querySelectorAll(`.toast-notification.toast-${type}`).forEach(notif => {
@@ -4728,6 +4747,7 @@
                 
                 return notification;
             }
+
             createNotification(message, type) {
                 const notification = Utils.createElement('div', {
                     className: `toast-notification toast-${type}`,
@@ -4766,18 +4786,21 @@
                 
                 return notification;
             }
+
             hideNotification(notification) {
                 notification.style.transform = 'translateX(100%)';
                 setTimeout(() => {
                     this.removeNotification(notification);
                 }, MANNY_CONFIG.ANIMATION_DURATION);
             }
+
             removeNotification(notification) {
                 if (document.body.contains(notification)) {
                     document.body.removeChild(notification);
                 }
                 this.notifications.delete(notification);
             }
+
             destroy() {
                 this.notifications.forEach(notification => {
                     this.removeNotification(notification);
@@ -4785,8 +4808,10 @@
                 this.notifications.clear();
             }
         }
+
         // Application Initialization
         let mannyApp;
+
         document.addEventListener('DOMContentLoaded', function() {
             try {
                 mannyApp = new MannyProfessionalApp();
@@ -4794,12 +4819,12 @@
                 
                 // Post-initialization setup
                 setTimeout(() => {
-                    const button = document.querySelector('.btn-ficha-tecnica');
+                    const button = document.querySelector('.btn-ficha-tecnica-unica');
                     const pricingCard = document.getElementById('pricingCardClickeable');
                     const whatsappButtons = document.querySelectorAll('.btn-whatsapp-precio');
                     
                     if (button) {
-                        const textElement = button.querySelector('.ficha-text');
+                        const textElement = button.querySelector('.ficha-unica-text');
                         if (textElement) {
                             button.setAttribute('data-original-text', textElement.textContent);
                         }
@@ -4843,13 +4868,16 @@
                 console.error('❌ Manny App initialization failed:', error);
             }
         });
+
         // Global error handling
         window.addEventListener('error', function(event) {
             console.error('Global error:', event.error);
         });
+
         window.addEventListener('unhandledrejection', function(event) {
             console.error('Unhandled promise rejection:', event.reason);
         });
+
         // Performance monitoring
         window.addEventListener('load', function() {
             console.log('✅ Manny Professional Template fully loaded');
@@ -4869,6 +4897,7 @@
             console.log('✓ Production-ready state management');
             console.log('🟢 ENTERPRISE-GRADE TEMPLATE READY FOR PRODUCTION');
         });
+
     </script>
 </body>
 </html>
