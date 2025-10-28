@@ -1986,34 +1986,42 @@
         }
         
         .guarantee-image {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto;
             position: relative;
         }
-        
+
         .guarantee-image img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             filter: drop-shadow(0 10px 25px rgba(255, 255, 255, 0.4));
+            animation: pulse 3s ease-in-out infinite;
         }
-        
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
         .guarantee h3 {
-            font-size: var(--text-base);
+            font-size: 1.125rem;
             font-weight: 800;
-            margin-bottom: var(--space-2);
+            margin-bottom: var(--space-3);
             color: var(--color-white) !important;
-            line-height: 1.2;
+            line-height: 1.3;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            letter-spacing: -0.01em;
         }
-        
+
         .guarantee p {
-            font-size: var(--text-sm);
+            font-size: 0.95rem;
             color: var(--color-white) !important;
-            line-height: 1.6;
-            font-weight: 500;
+            line-height: 1.7;
+            font-weight: 400;
             text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+            opacity: 0.95;
         }
         
         /* ===== TERMS ===== */
@@ -2645,15 +2653,28 @@
             }
             
             .guarantee-content {
-                grid-template-columns: auto 1fr;
+                grid-template-columns: 200px 1fr;
                 text-align: left;
-                gap: var(--space-8);
+                gap: var(--space-10);
+                align-items: center;
             }
-            
+
             .guarantee-image {
-                width: 140px;
-                height: 140px;
+                width: 200px;
+                height: 200px;
                 margin: 0;
+            }
+
+            .guarantee h3 {
+                font-size: 1.5rem;
+                margin-bottom: var(--space-4);
+                line-height: 1.4;
+            }
+
+            .guarantee p {
+                font-size: 1.1rem;
+                line-height: 1.75;
+                max-width: 90%;
             }
             
             .footer-content {
@@ -3315,7 +3336,7 @@
               
                     <div class="hero-image">
               <img
-                src="https://prod-files-secure.s3.us-west-2.amazonaws.com/e9f5bc13-2d01-4855-98c0-060854b1aa6e/3aa114c6-8b38-4a0b-be2f-ea46f6496144/generated_1761508863558.webp?X-Amz-Algorithm&#x3D;AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256&#x3D;UNSIGNED-PAYLOAD&amp;X-Amz-Credential&#x3D;ASIAZI2LB466RIQKYMS7%2F20251028%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date&#x3D;20251028T034751Z&amp;X-Amz-Expires&#x3D;3600&amp;X-Amz-Security-Token&#x3D;IQoJb3JpZ2luX2VjEPn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDknEu6llZYVjZqsQYgJEIk9j84X8lB6Eggzww7mY1wnAiEA8IyRLucDVtZCce4WkdZhD6%2FwUUWE4eESL2m41T%2BcjMgqiAQIsv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGhQ9ieVwHqz35uv3SrcA%2FT8pU9lE7hA6W2SKgbmBvGiOeVxOzhY7oNcXeNKpFh1hqV8%2FGO9JH1oB8ZcD6p%2B5WeUamUuCCLN3%2FoJAoZabEDtc4MFjJolzduRQ2%2BkzqddSc2pdF%2FjLqRYi1%2Fu7vN8zPkPkObWBH1JjI1GgdRxyiAMuRry2k%2BOfmh8TKe9BSdPx0a7Embqb9OtiEYjwcX4BIuEk7RMGdr98uk0HV%2F6W5Nq%2BkXTKLImx99L66De18hZ0yZs%2Bvlj17drLlpQFqf5oNZNbIghCz8tLXa6Xp2lmJ2vwnLXD%2B7uJmEiZZvAY4PY84IWwifaL8T9KNlyL3bvD9oU2Droocs7%2B6b0tiYSBXzHxsr6LTx2f%2F34E0lsXaYSM6M4NOHpGogDbc65bNkCCFDGz7Jdf5AymP3aF73XmigG6H74J7zMTeLo%2BF6CXrvYiftT4I5KN7Zt8a6Mvx%2FaTfsS7q6cf98%2BIEmV%2BTf%2BIyn2lbun2ocSrrZ4cNQTYVAKvFWZ2k8%2FMAs3ZpO%2BaJK2aO297ZCZbqQJLAxkhCjXLwtx7bZKvED4pA2Y0AC%2BVANKzjhH50guz%2BX90A937AseSwt43JGWnMNOtjdS%2Fn40Lla%2F91XWaILXqiWw0NVHLBWUUYy524wN85Ha7g31MMSwgMgGOqUBWW%2FMVfHXtqoomKpECA0S9iLeqoDpv0WVNjkwgjzAfMYZiH0EKqNAItToHGK%2BVIH7uJKuEDOmPqlQ2IDIrPZ9doEF9h%2FYdBd4SAdz14Anvr18UQFN3KbJOZ31mn1FyjYP0tnFsLmn%2FULBxufkWW%2FuvbEvmb9f5sdO%2BdST94%2B34G1LAB3tHkwHCFb%2F9TAnh5XNfr4NoCanr3gtNUw6x4V9zWdfFbAf&amp;X-Amz-Signature&#x3D;e0b42dce65d8189fd2d5edb5013dfbb4613ce2e7ab98383f654fd0c6a8d54e7c&amp;X-Amz-SignedHeaders&#x3D;host&amp;x-amz-checksum-mode&#x3D;ENABLED&amp;x-id&#x3D;GetObject"
+                src="https://prod-files-secure.s3.us-west-2.amazonaws.com/e9f5bc13-2d01-4855-98c0-060854b1aa6e/3aa114c6-8b38-4a0b-be2f-ea46f6496144/generated_1761508863558.webp?X-Amz-Algorithm&#x3D;AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256&#x3D;UNSIGNED-PAYLOAD&amp;X-Amz-Credential&#x3D;ASIAZI2LB466SFJCED3Z%2F20251028%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date&#x3D;20251028T182051Z&amp;X-Amz-Expires&#x3D;3600&amp;X-Amz-Security-Token&#x3D;IQoJb3JpZ2luX2VjEAoaCXVzLXdlc3QtMiJHMEUCIA%2BnJ9MyhLgWcLnh07mI9m5FKv%2Fod4bWmgPs5C%2BhIddEAiEA2CUhF%2Fu%2Bevy8qBRFn3jxtesMBZoRJUlCuTOvCnya7fcqiAQIw%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBlhGzcQ3BuK9RzuTircAwpFWxUDD4lc5RSnDysF2GGWJJXvkLuJWEHOupRCiL2%2Bl%2FLkzcUoIOzZr5GP39GJRQIV0TXZPiAPtSxgRBkLxHupV%2Fk2StOpLm%2BpSlXG6zNqMwrqGcbE1rrQUNowXtd5w3gJvV2XwqjFhL2PnQz1QC3lOwscv2%2Bd7mvXtjsbH689Ix76b85K3oH5YYHjutzOFyyWVCOG%2By5NqDuP9WIb7SMTWUoGuso8dOYWMBknFJHUU%2Bqf81O40UzTApEaRzxdLzskA5IujhEREvVMszyAeBhPuRRBCDXNODVobUsJ8Mt20FaZIqIRQyJhxW%2BXbXIsLCFNHrg0nixSTT%2BivE%2BWQvafxmUYtJWjzPGKeVTXOIMIsCV6u5UslH7jsLE5v9OKkPAysalegSEHr1GtcczCBIIV5oKszahAdI2n1HfBRS0jDXTqGvxgRY0qjIIX3c7i7C5piA7PCXhetSvDFZbmOY1uMpcf3FAik4Ac%2FCtPr9lhVgd%2F6zqxH%2F1BdE9XaX603gCm9MTZNvYVjzAPBYMS4YtV6eGIbEQOvWqln8FzGH6KoGYt%2B7Ab8sTdzktjQwrc3gyQDKs42fjT3evDKTNuOHCVBxP2ILqysGHPg%2FUY8zPiVh1HOStEoW6NQdTtMOOOhMgGOqUBzoqPrPNpKi7InuF%2BkbEUn5D3V5AGuwQm3KoPRpABff9b6H%2BidwDh366SbFGZsXayzNAfm85iT2uiVZTw9cZZsxb4Kwt84HN%2BvTROJqXq%2Bgyuw%2FIt2ykEGexrWUpsEMiRRTWoXH2AaPSFpsbiYB0tsfEEo9zMQ5UpSuMz8WmDqLNmwRZMCQCg99ivuvxJLtioiZx20zi47ckor1cwLNHVSpnV4rpx&amp;X-Amz-Signature&#x3D;0f7a44da9d8a9ce1035736b8fec3bb2678558cfd1ca1759726faafb99543c545&amp;X-Amz-SignedHeaders&#x3D;host&amp;x-amz-checksum-mode&#x3D;ENABLED&amp;x-id&#x3D;GetObject"
                 alt="Suministro e instalación de celdas fotovoltaicas"
                 loading="lazy"
               />
@@ -3452,7 +3473,7 @@
             <div class="plus-cards">
            
                 <div class="plus-card fade-in">
-                    <h4>Revisión visual y limpieza gratuita a los 6 meses</h4>
+                    <h4>Revisión y limpieza sin costo a los 6 meses</h4>
                     <p>Incluimos revisión visual completa de componentes, limpieza de los paneles 6 meses después de su puesta en marcha, sin costo.</p>
                 </div>
            
@@ -3508,10 +3529,10 @@
                     pz
                   </td>
                   <td class="text-center">
-                    1
+                    2
                   </td>
                                 <td class="text-right precio-unitario-cell">
-                                    <span class="money">$15837.07</span>
+                                    <span class="money">$7916.81</span>
                                 </td>
                                 <td class="text-right col-total">
                                     <span class="money">$18395</span>
@@ -3692,13 +3713,13 @@
                             <div class="mobile-item-detail">
                                 <div class="mobile-item-detail-label">Cantidad</div>
                   <div class="mobile-item-detail-value">
-                    1
+                    2
                   </div>
                             </div>
                             <div class="mobile-item-detail mobile-precio-unitario">
                                 <div class="mobile-item-detail-label">Precio</div>
                                 <div class="mobile-item-detail-value">
-                                    <span class="money">$15837.07</span>
+                                    <span class="money">$7916.81</span>
                                 </div>
                             </div>
                         </div>
@@ -3952,26 +3973,26 @@
            
           <div
             class="option-card fade-in"
-                     data-titulo="Ajuste de capacidad a 6 paneles fotovoltaicos" 
+                     data-titulo="Sistema ajustable a 6 paneles para inversión inicial menor" 
                      data-descripcion="Esta propuesta está diseñada para una instalación base de 8 módulos fotovoltaicos. Podemos ajustar la capacidad del sistema a 6 paneles para disminuir la inversión inicial, pero recomendamos ir de una vez por la capacidad de 8 modulos" 
                      data-precio=""
                      tabindex="0"
                      role="button"
-            aria-label="Opción: Ajuste de capacidad a 6 paneles fotovoltaicos"
+            aria-label="Opción: Sistema ajustable a 6 paneles para inversión inicial menor"
           >
               
                     <div class="option-content">
-                        <h3 class="option-title">Ajuste de capacidad a 6 paneles fotovoltaicos</h3>
+                        <h3 class="option-title">Sistema ajustable a 6 paneles para inversión inicial menor</h3>
                         <p class="option-description">Esta propuesta está diseñada para una instalación base de 8 módulos fotovoltaicos. Podemos ajustar la capacidad del sistema a 6 paneles para disminuir la inversión inicial, pero recomendamos ir de una vez por la capacidad de 8 modulos</p>
                     </div>
                     
                     <div class="precio-cotizar-container">
               <button
                 class="btn-whatsapp-precio"
-                                data-titulo="Ajuste de capacidad a 6 paneles fotovoltaicos"
+                                data-titulo="Sistema ajustable a 6 paneles para inversión inicial menor"
                                 data-descripcion="Esta propuesta está diseñada para una instalación base de 8 módulos fotovoltaicos. Podemos ajustar la capacidad del sistema a 6 paneles para disminuir la inversión inicial, pero recomendamos ir de una vez por la capacidad de 8 modulos"
                                 type="button"
-                aria-label="Consultar precio para Ajuste de capacidad a 6 paneles fotovoltaicos"
+                aria-label="Consultar precio para Sistema ajustable a 6 paneles para inversión inicial menor"
               >
                             PRECIO A COTIZAR
                         </button>
@@ -4109,10 +4130,10 @@
               alt="Sello de Garantía de Satisfacción"
             />
                 </div>
-                <div>
-                    <h3>Garantía de Satisfacción Total</h3>
+                <div class="guarantee-text">
+                    <h3>Garantía de satisfacción total o no pagas - Respaldamos nuestro trabajo al 100%</h3>
             <p>
-              Garantía de satisfacción total o no pagas - Respaldamos nuestro trabajo al 100%
+              Espero que nuestra propuesta cumpla con sus expectativas; de lo contrario, sus comentarios son importantes, ya que podemos superar cualquier propuesta en costo o en valor agregado.
             </p>
                 </div>
             </div>
